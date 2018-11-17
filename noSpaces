@@ -1,0 +1,10 @@
+exp=list(input())
+#print (exp)
+
+for i in range(len(exp)-1):
+	if exp[i]=='+' or exp[i]=='-' or exp[i]=='*' or exp[i]=='/':
+		exp[i]=' '+exp[i]+' '
+		
+#print (exp)
+#print (''.join(exp))
+print (list(''.join(exp).split()))
